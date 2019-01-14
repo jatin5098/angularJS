@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>Angular App</title>
+  </head>
+  <body ng-app="myApp" ng-controller="myCtrl" ng-cloak>
+    
+    <!-- App will render here -->
+    <div ui-view></div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.min.js"></script>
+    
+    <!-- Module -->
+    <script src="./app.module.js"></script>
+    
+    <!-- Config -->
+    <script src="./app.config.js"></script>
+
+    <!-- Interceptor -->
+    <script src="./app.interceptor.js"></script>
+
+    <!-- Providor -->
+    <script src="./app.provider.js"></script>
+
+    <!-- RUN Block -->
+    <script src="./app.run.js"></script>
+      
+    <!-- Directive Compile->Controller->Link -->
+    <script src="./app.directive.js"></script>
+    <script src="./exampleDir/example-dir.directive.js"></script>
+    <script src="./exampleDir/example-dir-req.directive.js"></script>
+
+    <!-- Controllers -->
+    <script src="./app.controller.js"></script>
+    <script src="./exampleDir/example-dir.controller.js"></script>
+
+    <!-- Service -->
+    <script src="./service/app.service.js"></script>
+
+    <!-- Filter -->
+    <script src="./app.filter.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<fieldset>
+    <legend>Example of Isolated scope</legend>
+    <h4>{{ msg }}</h4>
+    <h5>{{ textBinding }}</h5>
+    <input type="text" ng-model="msg" />
+    <button ng-click="printDate()">Click</button>
+    <hr/>
+    <h4>{{ message }}</h4>
+    <h4>{{ expCtrl.message }}</h4>
+    <input type="text" ng-model="title" ng-change="changeTitle()" />
+    <exp-req-directive></exp-req-directive>
+    <fieldset>
+        <legend>Transclude</legend>
+        <div ng-transclude></div>
+    </fieldset>
+</fieldset>

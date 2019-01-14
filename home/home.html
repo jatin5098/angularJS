@@ -1,0 +1,15 @@
+<h1>{{ welcomeMsg | upperCase}}</h1>
+<h2>{{ message }}</h2>
+<input type="text" ng-model="message" />
+<my-directive></my-directive>
+
+<!-- 
+    1. Directive
+    2. Data bindings
+    -->
+<exp-directive
+    text-binding="Text @ binding"
+    msg="message"
+    print-date="printDate()">
+    <p>Setting ng-transclude true</p>
+</exp-directive>
